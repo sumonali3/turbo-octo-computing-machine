@@ -11,12 +11,16 @@
 .clear{
   clear: both;
 }
-
+.row{
+  width: 100%;
+  margin: 0 auto;
+}
 #wrapper{
   width: 90%;
   margin: 0 auto;
   font-family: 'Work Sans', sans-serif;
 }
+
 .col-1 {
   width: 8.33%;
   float: left;
@@ -62,7 +66,7 @@
   width: 91.66%;
   float: left;
 }
-.col-12 .row{
+.col-12{
   width: 100%;
   float: left;
 }
@@ -92,6 +96,7 @@ color: #fff;
 font-family: 'Work Sans', sans-serif;
 padding: 10px;
 border-radius: 8px;
+font-weight: 550;
 }
 .manu-part li a:hover{
 color: black;
@@ -99,6 +104,9 @@ background: #fff;
 }
 .hero_part{
   padding-top: 120px;
+}
+.hero_part h1{
+  font-size: 45pt;
 }
 .hero_part h1,p{
   padding-bottom: 40px;
@@ -114,7 +122,9 @@ background: #fff;
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
-  width: 150px;
+  width: 170px;
+  font-weight: 550;
+  font-size: 14pt;
 }
 .hero-but_part button:hover{
   background: #fff;
@@ -124,6 +134,9 @@ background: #fff;
 .hero_part img{
 position: relative;
 top: 45px;
+}
+.sec-2-m{
+  padding-bottom: 100px;
 }
 .sec-2-mobile{
   background: url(img/vibo-background-2.png) no-repeat;
@@ -142,23 +155,30 @@ margin: 0 auto;
 text-align: center;
 padding: 15px;
 border-radius: 8px;
-box-shadow: 0px 0px 8px gray;
-cursor: pointer;
 margin: 10px;
+background: rgba(224, 224, 224, 0.4);
 
 }
 .box-part:hover{
   border: 1px solid darkgray;
+  box-shadow: 3px -3px 8px gray;
+}
+.box-part h2{
+  font-size: 14pt;
+  font-weight: 550;
 }
 .box-part img, h2, p{
   padding: 13px 0;
-  line-height: 27px;
-  word-spacing: 5px;
-  font-family: 'Work Sans', sans-serif;
+  line-height: 25px;
+  /* word-spacing: 2px; */
 }
+.box-part img{
+  padding: 60px 0 25px 0;
+}
+
 .posi{
   position: relative;
-top: -55px;
+top: -85px;
 left: 80px;
 right: 0;
 }
@@ -170,38 +190,59 @@ right: 0;
 }
 .posi-2{
   position: relative;
-top: 60px;
-left: 0px;
+top: 20px;
+left: 20px;
 right: 0;
 
 }
 .posi-3{
   position: relative;
-top: 150px;
-left: 130px;
+top: 100px;
+left: 100px;
 right: 0;
 
 }
 #sec-love{
   background: rgba(218, 218, 218, 0.7);
 }
-
+.love-part{
+  padding-top: 80px;
+}
 .love-part-1{
   text-align: right;
   padding: 10px 40px;
+}
+.love-part-1 h2{
+  font-size: 30pt;
+  font-weight: bold;
+}
+.love-part-1 p{
+  font-size: 14pt;
+  font-weight: 0;
 }
 
 .love-btn-part button{
   padding: 15px;
   border: 1px solid darkgray;
   border-radius: 5px;
-  width: 150px;
+  width: 180px;
   background: #33d2fd;
   color: #fff;
   cursor: pointer;
+  font-size: 15pt;
+  font-weight: 550;
+}
+.love-btn-part button:hover{
+  transition: all 1s;
+  color: #000;
+  
 }
 .love-part-2{
   padding: 10px 40px;
+}
+.love-part-sec-1 p{
+font-size: 14pt;
+font-weight: 0;
 }
 .love-part-sec-1{
   padding: 30px 10px;
@@ -209,8 +250,8 @@ right: 0;
   margin: 13px 0;
 }
 .love-part-sec-1 span{
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 14pt;
+  font-weight: 550;
 }
 .love-part-2 i{
   padding: 0 10px;
@@ -222,17 +263,35 @@ right: 0;
   padding-left: 36px;
 }
 .love-part-3-img{
-  text-align: center;
-  padding: 0 -30px;
-}
-.love-part-3-img img{
-  margin-top: 150px;
+  margin-top: 90px;
 }
 .love-part-3-box{
-  padding: 0 100px;
+  padding-left: 250px;
+  margin-top: -45pt;
+  padding-bottom: 80px;
 }
+
 .love-h1{
   margin-top: 150px;
+}
+.love-h1 h1{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px 0;
+}
+.love-h2{
+  font-size: 15pt;
+  font-weight: 550;
+  padding: 10px 0;
+}
+/* .love-h2 i{
+  background: #33d2fd;
+} */
+.love-h2 h4{
+  padding: 12px 0;
+}
+.love-part-parag{
+  font-size: 14pt;
 }
 .sec-4a{
   background: url(img/backgroun-img4.png) no-repeat ;
@@ -245,9 +304,14 @@ right: 0;
 .sec-4-icon-part{
   margin-top: 200px;
 }
+.sec-4-icon-part h1{
+  font-size: 30pt;
+  font-weight: bold;
+}
 .sec-4-icon-part p{
   color: #fff;
   padding: 35px 0;
+  font-size: 14pt;
 }
 .imgpart{
   padding: 25px 0;
@@ -255,40 +319,87 @@ right: 0;
 .imgpart img{
   padding: 0 35px 0px 0;
 }
-.get-the-app{
-  background: #f94f78;
+.get-the{
+  background: #fb5c75;
   text-align: center;
-  width: 400px;
+  width: 330px;
   margin: 0 auto;
-  text-transform: uppercase;
   position: relative;
   top: -25px;
 }
-.company{
-  padding: 100px 100px;
+.get-the h1{
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 20pt;
+  font-weight: bold;
 }
-.touch{
-  text-align: center;
-}
-.touch-button button:hover{
-  color: #fff;
-  background: #33d2fd;
-  transition: all 1s;
+.last-1-hero{
+  width: 70%;
+  margin:0 auto;
+
+  
   
 }
-.touch-button button{
-  position: relative;
-  top: -20px;
-  left: 100px;
-  padding: 10px;
+.compay{
+  padding: 20px;
+}
+.compay h2{
+  font-size: 15pt;
+  font-weight: 550;
+}
+.compay ul li{
+  padding: 5px;
+  font-size: 14pt;
+}
+.get-in{
+  padding: 60px 0;
+  text-align: center;
+}
+.get-in h1{
+  font-size: 30pt;
+  padding: 10px 0;
+}
+.get-in p{
+  padding: 10px 0;
+}
+.button-sec{
+  text-align: center;
+  padding: 0 5px 80px 5px;
+}
+.button-sec input{
+  width: 450px;
+  height: 45px;
+  border: 0px;
+  padding: 5px 15px;
   font-size: 20px;
-  border: 1px solid darkgray;
-  border-radius: 5px;
+  background: rgba(194, 194, 194,.4);
+}
+.button-sec span{
+  padding: 0 20px 0 0;
+}
+.button-sec button{
+  height: 45px;
+  border: 0;
+  width: 200px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 15pt;
+  font-weight: 550;
+  background: #33d2fd;
   cursor: pointer;
+}
+.button-sec button:hover{
+  color: #000;
+  transition: all 1s;
+  background: rgba(194, 194, 194,.4);
 }
 .foot{
   padding: 25px;
   color: #fff;
+}
+.foot h3{
+  font-size: 14pt;
+  font-weight: 100;
 }
 footer{
   background: #233148;
